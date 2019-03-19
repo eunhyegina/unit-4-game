@@ -78,15 +78,15 @@ $(document).ready(function () {
       loser();
     }
   });
-  var restartGame = function () {
+  restartGame = function () {
     score = 0;
     $("#totalScore").text(score);
     randomNumber = Math.floor(Math.random() * 101) + 19;
     console.log(randomNumber);
     $("#numberGenerated").text(randomNumber);
-    var crystalOne = Math.floor(Math.random() * 12) + 1;
-    var crystalTwo = Math.floor(Math.random() * 12) + 1;
-    var crystalThree = Math.floor(Math.random() * 12) + 1;
-    var crystalFour = Math.floor(Math.random() * 12) + 1;
+    crystalOne = Math.floor(Math.random() * 12) + 1;
+    crystalTwo = Math.floor(Math.random() * 12) + 1;
+    crystalThree = Math.floor(Math.random() * 12) + 1;
+    crystalFour = Math.floor(Math.random() * 12) + 1;
   }
 });
