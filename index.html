@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit 4 Game</title>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+</head>
+
+<body>
+  <h1>CrystalsCollector!</h1>
+  <p>You will be given a random number at the start of the game.<br>
+    <br>
+    There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
+    score.<br>
+    <br>
+    You win the game by matching your total score goes above the random number.<br>
+    <br>
+    The value of each crystal is hidden from you until you click on it.<br>
+    <br>
+    Each time when the game starts, the game will change the values of each crystal</p>
+  <div class="row">
+    <div id="numberGenerated"></div>
+    <div id="scoreBoard">
+      <h6>Wins:</h6>
+      <div id="win"></div>
+      <h6>Losses:</h6>
+      <div id="loss"></div>
+    </div>
+  </div><button class="buttons" id="crystalOne" type="button"></button> <button class="buttons" id="crystalTwo" type="button"></button>
+  <button class="buttons" id="crystalThree" type="button"></button> <button class="buttons" id="crystalFour" type="button"></button>
+  <div id="scoreTitle">
+    Your Total Score Is:
+  </div>
+  <div id="totalScore"></div>
+  <script src="assets/javascript/game.js">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+  </script>
+</body>
+
+</html>
